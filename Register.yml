@@ -1,0 +1,32 @@
+info:
+  name: Register
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:3000/api/auth/register
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+                "username": "john_doe",
+                "password": "admin@123",
+                "roleId": 3,
+                "contactNumber": "8876543210",
+                "email": "john.doe@example.com",
+                "fullName": "John Doe",
+                "profileImage": "https://example.com/profiles/john.jpg",
+                "gitUsername": "johndoe_git",
+                "gitPublicKey": "ssh-rsa AAAAB3NzaC1yc2E..."
+           }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

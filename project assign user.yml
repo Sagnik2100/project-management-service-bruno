@@ -1,0 +1,27 @@
+info:
+  name: project assign user
+  type: http
+  seq: 17
+
+http:
+  method: POST
+  url: http://localhost:3000/api/projects/assign-user
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEwLCJVc2VybmFtZSI6ImxlYWQiLCJGdWxsTmFtZSI6bnVsbCwiUm9sZUlEIjoyLCJpYXQiOjE3NzIxMDE0NjksImV4cCI6MTc3MjEwNTA2OX0.PcvSqxnTj8vBSwHZ6rs1pcbCtj79OZH7ckEqjZY6CVs
+  body:
+    type: json
+    data: |-
+      {
+                "userId": 1,
+                "projectId": 1
+           }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

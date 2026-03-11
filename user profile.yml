@@ -1,0 +1,32 @@
+info:
+  name: user profile
+  type: http
+  seq: 8
+
+http:
+  method: PUT
+  url: http://localhost:3000/api/users/profile
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEwLCJVc2VybmFtZSI6ImxlYWQiLCJGdWxsTmFtZSI6bnVsbCwiUm9sZUlEIjoyLCJpYXQiOjE3NzIxOTM3MTYsImV4cCI6MTc3MjE5NzMxNn0.HfFhOWLmAJiT5rQY-0Smcp5pXaEdvi7TCDVloP0a0v8
+  body:
+    type: json
+    data: |-
+      {
+                 "email": "user@example.com",
+                 "fullName": "John Doe",
+                 "contactNumber": "1234567898",
+                 "profilePicture": "base64_string_or_url",
+                 "gitUsername": "johndoe_git",
+                 "gitPublicKey": "ssh-rsa ...",
+                 "designations": [1, 2, 3]
+               }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

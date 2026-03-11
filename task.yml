@@ -1,0 +1,36 @@
+info:
+  name: task
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:3000/api/tasks
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjgsIlVzZXJuYW1lIjoiZGV2IiwiRnVsbE5hbWUiOm51bGwsIlJvbGVJRCI6MywiaWF0IjoxNzczMTMwOTI3LCJleHAiOjE3NzMxMzQ1Mjd9.0J6LfPQV-HV7ks9sEAEnKE8VjzgE8he1OIj98LIZ-88
+  body:
+    type: json
+    data: |-
+      {
+                 "TaskID": 0,
+                 "TaskStatus": 1,
+                 "TaskTypeID": 2,
+                 "ProjectID": 2,
+                 "Priority": 1,
+                 "Title": "Fix login bug",
+                 "SubTitle": "Auth module",
+                 "TaskDescription": "Investigate and fix the login failure",
+                 "ProgressPercentage": 10,
+                 "Deadline": "2026-03-31",
+                 "AssignedToUserID": 5
+               }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

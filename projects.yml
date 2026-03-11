@@ -1,0 +1,32 @@
+info:
+  name: Projects
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:3000/api/projects
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEwLCJVc2VybmFtZSI6ImxlYWQiLCJGdWxsTmFtZSI6bnVsbCwiUm9sZUlEIjoyLCJpYXQiOjE3NzI5ODE0MDQsImV4cCI6MTc3Mjk4NTAwNH0.rXBf98AwVQvTdoHr9770L69IMVSF0IXm6crxcH-TePU
+  body:
+    type: json
+    data: |-
+      {
+                 "ProjectID": 0,
+                 "ProjectName": "New Project with Deadline",
+                 "ProjectDeadline": "2026-12-31",
+                 "ProgressPercentage": 15,
+                 "ProjectType": 1,
+                 "ProjectPriority": 1,
+                 "ProjectStatus": 1
+               }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

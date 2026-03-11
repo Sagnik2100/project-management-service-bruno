@@ -1,0 +1,18 @@
+info:
+  name: Project Status
+  type: http
+  seq: 12
+
+http:
+  method: GET
+  url: http://localhost:3000/api/master/project-status
+  headers:
+    - name: Authorization
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjgsIlVzZXJuYW1lIjoiZGV2IiwiRnVsbE5hbWUiOm51bGwsIlJvbGVJRCI6MywiaWF0IjoxNzcxOTMyMDA3LCJleHAiOjE3NzE5MzU2MDd9.ruEObLvhJciqYw93GUsuu0C1dwvdKjmk-9s1bl94W_A
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

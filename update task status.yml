@@ -1,0 +1,29 @@
+info:
+  name: update task status
+  type: http
+  seq: 10
+
+http:
+  method: PATCH
+  url: http://localhost:3000/api/tasks/status
+  headers:
+    - name: Authorization
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjksIlVzZXJuYW1lIjoiVGFuYXkiLCJGdWxsTmFtZSI6bnVsbCwiUm9sZUlEIjpudWxsLCJpYXQiOjE3NzE4NDY4MjAsImV4cCI6MTc3MTg1MDQyMH0.OuTiGAkZ_RwHWwhwiJatpQ7ZQCIwwCWvn3IVq0L04S8
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "TaskID": 1,
+          "TaskStatus": 2,
+          "TaskPriority": 1,
+          "TaskDeadline": "2026-12-31 23:59:59"
+        }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

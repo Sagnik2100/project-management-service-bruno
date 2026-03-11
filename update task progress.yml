@@ -1,0 +1,27 @@
+info:
+  name: update task progress
+  type: http
+  seq: 21
+
+http:
+  method: PATCH
+  url: http://localhost:3000/api/tasks/progress
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjgsIlVzZXJuYW1lIjoiZGV2IiwiRnVsbE5hbWUiOm51bGwsIlJvbGVJRCI6MywiaWF0IjoxNzczMTIwNTg5LCJleHAiOjE3NzMxMjQxODl9.6xPihluH0MYCMTGOJSQDBCE8R2xcWK_t-ki4cKq_dVQ
+  body:
+    type: json
+    data: |-
+      {
+                 "TaskID": 1,
+                 "TaskProgress": 75
+               }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

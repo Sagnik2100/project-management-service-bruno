@@ -1,0 +1,18 @@
+info:
+  name: project-type
+  type: http
+  seq: 14
+
+http:
+  method: GET
+  url: http://localhost:3000/api/master/project-type
+  headers:
+    - name: Authorization
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjgsIlVzZXJuYW1lIjoiZGV2IiwiRnVsbE5hbWUiOm51bGwsIlJvbGVJRCI6MywiaWF0IjoxNzcxOTM1OTQyLCJleHAiOjE3NzE5Mzk1NDJ9.rJCh3T7NO_FLy697nuAOmtZWxgNWw75ak63VC9qk6Fs
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
