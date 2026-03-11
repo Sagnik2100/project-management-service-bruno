@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: http://localhost:3000/api/designations
+  url: "{{baseUrl}}designations"
   headers:
     - name: Authorization
-      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEwLCJVc2VybmFtZSI6ImxlYWQiLCJGdWxsTmFtZSI6bnVsbCwiUm9sZUlEIjoyLCJpYXQiOjE3NzIxOTgxNDcsImV4cCI6MTc3MjIwMTc0N30.GE5HJti56SWGAerqcJxeBenhd-h4jltf8OIgT3f58k4
+      value: "{{token}}"
   auth: inherit
 
 settings:

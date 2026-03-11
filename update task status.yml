@@ -5,10 +5,10 @@ info:
 
 http:
   method: PATCH
-  url: http://localhost:3000/api/tasks/status
+  url: "{{baseUrl}}tasks/status"
   headers:
     - name: Authorization
-      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjksIlVzZXJuYW1lIjoiVGFuYXkiLCJGdWxsTmFtZSI6bnVsbCwiUm9sZUlEIjpudWxsLCJpYXQiOjE3NzE4NDY4MjAsImV4cCI6MTc3MTg1MDQyMH0.OuTiGAkZ_RwHWwhwiJatpQ7ZQCIwwCWvn3IVq0L04S8
+      value: "{{token}}"
     - name: Content-Type
       value: application/json
   body:

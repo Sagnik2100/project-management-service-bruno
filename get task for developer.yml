@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: http://localhost:3000/api/tasks/my-tasks?projectId=0&taskStatusId=0&taskPriority=0
+  url: "{{baseUrl}}tasks/my-tasks?projectId=0&taskStatusId=0&taskPriority=0"
   headers:
     - name: Authorization
-      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjgsIlVzZXJuYW1lIjoiZGV2IiwiRnVsbE5hbWUiOm51bGwsIlJvbGVJRCI6MywiaWF0IjoxNzczMTI0NTUzLCJleHAiOjE3NzMxMjgxNTN9.79UV3aYn8vw6x_V1ntUEa_0evcWZB30u_JVgyNiR0eA
+      value: "{{token}}"
   params:
     - name: projectId
       value: "0"

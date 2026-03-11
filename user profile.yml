@@ -5,12 +5,12 @@ info:
 
 http:
   method: PUT
-  url: http://localhost:3000/api/users/profile
+  url: "{{baseUrl}}users/profile"
   headers:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEwLCJVc2VybmFtZSI6ImxlYWQiLCJGdWxsTmFtZSI6bnVsbCwiUm9sZUlEIjoyLCJpYXQiOjE3NzIxOTM3MTYsImV4cCI6MTc3MjE5NzMxNn0.HfFhOWLmAJiT5rQY-0Smcp5pXaEdvi7TCDVloP0a0v8
+      value: "{{token}}"
   body:
     type: json
     data: |-

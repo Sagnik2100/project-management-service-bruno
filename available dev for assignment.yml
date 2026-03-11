@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: http://localhost:3000/api/tasks/available-developers?projectId=1
+  url: "{{baseUrl}}tasks/available-developers?projectId=1"
   headers:
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEwLCJVc2VybmFtZSI6ImxlYWQiLCJGdWxsTmFtZSI6bnVsbCwiUm9sZUlEIjoyLCJpYXQiOjE3NzIxODI5MDUsImV4cCI6MTc3MjE4NjUwNX0.AkOi9_iX0TSFdV_KyceqkFXlvXprIGbIUJDdPfK0ZWg
+      value: "{{token}}"
   params:
     - name: projectId
       value: "1"

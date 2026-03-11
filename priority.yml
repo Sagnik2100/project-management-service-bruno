@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: http://localhost:3000/api/master/priority
+  url: "{{baseUrl}}master/priority"
   headers:
     - name: Authorization
-      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEwLCJVc2VybmFtZSI6ImxlYWQiLCJGdWxsTmFtZSI6bnVsbCwiUm9sZUlEIjoyLCJpYXQiOjE3NzIxODEzMjksImV4cCI6MTc3MjE4NDkyOX0.EO_uh7pVPvfBqqOfPv9RKQVW8PMzBPABS6ZVnjfYOy0
+      value: "{{token}}"
   auth: inherit
 
 settings:

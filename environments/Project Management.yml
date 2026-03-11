@@ -1,0 +1,6 @@
+name: Project Management
+variables:
+  - name: baseUrl
+    value: project-management-service.vercel.app/api/
+  - name: token
+    value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEwLCJVc2VybmFtZSI6ImxlYWQiLCJGdWxsTmFtZSI6bnVsbCwiUm9sZUlEIjoyLCJpYXQiOjE3NzMyMTYzMDIsImV4cCI6MTc3MzIxOTkwMn0.yzT0Q7O3pYYOlOuW8XBz2DZqz5RbUlXrFf-v45ZcIUE

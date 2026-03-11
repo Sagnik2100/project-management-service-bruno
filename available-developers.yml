@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: project-management-service.vercel.app/api/projects/available-developers
+  url: "{{baseUrl}}projects/available-developers"
   headers:
     - name: Authorization
-      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjEwLCJVc2VybmFtZSI6ImxlYWQiLCJGdWxsTmFtZSI6bnVsbCwiUm9sZUlEIjoyLCJpYXQiOjE3NzI3OTcxOTIsImV4cCI6MTc3MjgwMDc5Mn0.vtek4mSuMn-7UNSc22Wy4TEg-siH_DYuG4CNSbjlTkg
+      value: "{{token}}"
   auth: inherit
 
 settings:

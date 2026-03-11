@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: http://localhost:3000/api/tasks/assignment-members
+  url: "{{baseUrl}}tasks/assignment-members"
   headers:
     - name: Authorization
-      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjksIlVzZXJuYW1lIjoiVGFuYXkiLCJGdWxsTmFtZSI6bnVsbCwiUm9sZUlEIjpudWxsLCJpYXQiOjE3NzE4NDU3MjksImV4cCI6MTc3MTg0OTMyOX0.ss3Dr9XEk9R_sXhCkQwszx6Ek9c7QUkbefgn2r0IojE
+      value: "{{token}}"
   auth: inherit
 
 settings:

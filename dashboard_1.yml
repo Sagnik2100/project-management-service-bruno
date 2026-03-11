@@ -5,7 +5,10 @@ info:
 
 http:
   method: GET
-  url: ""
+  url: "{{baseUrl}}developer/dashboard/count"
+  headers:
+    - name: Authorization
+      value: "{{token}}"
   auth: inherit
 
 settings:

@@ -5,12 +5,12 @@ info:
 
 http:
   method: POST
-  url: http://localhost:3000/api/tasks
+  url: "{{baseUrl}}api/tasks"
   headers:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjgsIlVzZXJuYW1lIjoiZGV2IiwiRnVsbE5hbWUiOm51bGwsIlJvbGVJRCI6MywiaWF0IjoxNzczMTMwOTI3LCJleHAiOjE3NzMxMzQ1Mjd9.0J6LfPQV-HV7ks9sEAEnKE8VjzgE8he1OIj98LIZ-88
+      value: "{{token}}"
   body:
     type: json
     data: |-

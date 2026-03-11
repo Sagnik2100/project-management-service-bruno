@@ -5,12 +5,12 @@ info:
 
 http:
   method: PATCH
-  url: http://localhost:3000/api/tasks/progress
+  url: "{{baseUrl}}tasks/progress"
   headers:
     - name: Content-Type
       value: application/json
     - name: Authorization
-      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySUQiOjgsIlVzZXJuYW1lIjoiZGV2IiwiRnVsbE5hbWUiOm51bGwsIlJvbGVJRCI6MywiaWF0IjoxNzczMTIwNTg5LCJleHAiOjE3NzMxMjQxODl9.6xPihluH0MYCMTGOJSQDBCE8R2xcWK_t-ki4cKq_dVQ
+      value: "{{token}}"
   body:
     type: json
     data: |-
