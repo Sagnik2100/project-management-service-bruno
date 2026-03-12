@@ -15,10 +15,12 @@ http:
     type: json
     data: |-
       {
-          "TaskID": 1,
+         "TaskID": 1,
           "TaskStatus": 2,
+          "IsRejected": 1,
+          "Remarks": "Insufficient details provided",
           "TaskPriority": 1,
-          "TaskDeadline": "2026-12-31 23:59:59"
+          "TaskDeadline": "2026-03-20T17:00:00"
         }
   auth: inherit
 
