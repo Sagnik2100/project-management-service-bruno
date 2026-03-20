@@ -13,7 +13,7 @@ http:
       value: "{{token}}"
   body:
     type: json
-    data: '{"username":"sagnik","password":"admin@123"}'
+    data: '{"username":"lead","password":"admin@123"}'
   auth: inherit
 
 runtime:

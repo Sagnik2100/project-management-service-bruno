@@ -4,8 +4,16 @@ info:
   seq: 32
 
 http:
-  method: GET
-  url: "{{baseUrl}}"
+  method: POST
+  url: "{{baseUrl}}notifications/update-seen-status"
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: "{{token}}"
+  body:
+    type: json
+    data: "{\r\n  \"NotificationID\": 1\r\n}"
   auth: inherit
 
 settings:
