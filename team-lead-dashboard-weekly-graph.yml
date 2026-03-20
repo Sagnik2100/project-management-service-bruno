@@ -1,20 +1,15 @@
 info:
-  name: user-wise-status-dashboard
+  name: team-lead-dashboard-weekly-graph
   type: http
-  seq: 24
+  seq: 29
 
 http:
   method: get
-  url: "{{baseUrl}}developer/dashboard/developer-wise-team-progress-graph"
+  url: http://localhost:3000/api/developer/dashboard/weekly-task-progress-graph
   headers:
     - name: Authorization
       value: Bearer YOUR_JWT_TOKEN
   auth: inherit
-
-runtime:
-  variables:
-    - name: baseUrl
-      value: http://localhost:3000/api/
 
 settings:
   encodeUrl: false

@@ -1,0 +1,23 @@
+info:
+  name: remove-task
+  type: http
+  seq: 28
+
+http:
+  method: delete
+  url: http://localhost:3000/api/tasks
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+  body:
+    type: json
+    data: "{\r\n  \"taskId\": 4\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

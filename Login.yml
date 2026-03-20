@@ -9,9 +9,11 @@ http:
   headers:
     - name: Content-Type
       value: application/json
+    - name: Authorization
+      value: "{{token}}"
   body:
     type: json
-    data: '{"username":"lead","password":"admin@123"}'
+    data: '{"username":"sagnik","password":"admin@123"}'
   auth: inherit
 
 runtime:

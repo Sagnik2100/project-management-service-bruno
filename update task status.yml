@@ -5,7 +5,7 @@ info:
 
 http:
   method: PATCH
-  url: "{{baseUrl}}tasks/status"
+  url: "{{vercel}}tasks/status"
   headers:
     - name: Authorization
       value: "{{token}}"
